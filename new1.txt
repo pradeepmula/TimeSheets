@@ -1,0 +1,8 @@
+curl -X PUT -H "Content-Type: application/xml" -H "Cache-Control: no-cache" -H "Postman-Token: 9a8255b8-4f95-ff25-ec2c-33fa7ac8ff5e" -d '
+<connectivity-parameters xmlns="http://com/att/sdn-mon/connectivity">
+<packet-size>100</packet-size>
+<packet-frequency>100</packet-frequency>
+<packet-count>4</packet-count>
+<packet-timeout>5</packet-timeout>
+</connectivity-parameters>' 
+"http://135.25.187.62:8181/restconf/config/network-topology:network-topology/topology/topology-netconf/node/rp494p/yang-ext:mount/sdn-mon-connectivity:connectivity-parameters"
